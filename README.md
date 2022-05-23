@@ -1,15 +1,12 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Js Group Project
 
-# Project Name
-
-> Description the project.
-
+> Js Group Project made by a group of two teams
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
+- Js
 
 ## Live Demo (if available)
 
@@ -56,7 +53,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/yayner2002/js-group-project/issues).
 
 ## Show your support
 
