@@ -1,117 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Js API</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-    />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Js API</title>
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
 </head>
+
 <body>
-    <div class="container">
-        <div class="nav">
-          <div class="nav-left"></div>
-          <div class="num-of-movies">Movie Shows(0)</div>
-          <div class="nav-middle">
-            <ul class="nav-items">
-              <li><a href="#">Login</a></li>
-              <li><a href="#">Register</a></li>
-            </ul>
+  <div class="container">
+    <div class="nav">
+      <div class="nav-left"></div>
+      <div class="num-of-movies">Movie Shows(0)</div>
+      <div class="nav-middle">
+        <ul class="nav-items">
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+        </ul>
+      </div>
+    </div>
+    <main class="main-page">
+      <h1 class="high-rated">Most watched movies</h1>
+      <section class="movies-display">
+        <div class="movie-content">
+          <div class="card-image">
+            <img src="/images/movie1.jpg" alt="movies">
+          </div>
+          <div class="movie-descrp">
+            <div class="movie-ratings">
+              <i class="fa-solid like-btn fa-heart"></i>
+              <p id="rateCounts">2</p>
+            </div>
+            <h2 class="movie-title">Dooms day</h2>
+            <button class="movie-comment" id="comment-btn">comment</button>
           </div>
         </div>
-        <main class="main-page">
-          <h1 class="high-rated">Most watched movies</h1>
-          <section class="movies-display">
-            <div class="movie-content">
-              <img src="/images/movie1.jpg" alt="movies">
-              <div class="movie-ratings"></div>
-              <h2 class="movie-title">Dooms day</h2>
-              <pclass="movie-comment">Comment</p>
-            </div>
 
-            <div class="movie-content">
-              <div class="card-image">
-              <img src="/images/movie1.jpg" alt="movies">
-            </div>
-              <div class="movie-ratings"></div>
-              <h2 class="movie-title">Dooms day</h2>
-              <pclass="movie-comment">Comment</p>
-            </div>
-            <div class="movie-content">
-              <img src="/images/movie1.jpg" alt="movies">
-              <div class="movie-ratings"></div>
-              <h2 class="movie-title">Dooms day</h2>
-              <pclass="movie-comment">Comment</p>
-            </div>
-
-            <div class="movie-content">
-              <img src="/images/movie1.jpg" alt="movies">
-              <div class="movie-ratings"></div>
-              <h2 class="movie-title">Dooms day</h2>
-              <pclass="movie-comment">Comment</p>
-            </div>
-
-            <div class="movie-content">
-              <img src="/images/movie1.jpg" alt="movies">
-              <div class="movie-ratings"></div>
-              <h2 class="movie-title">Dooms day</h2>
-              <pclass="movie-comment">Comment</p>
-            </div>
-
-            <div class="movie-content">
-              <img src="/images/movie1.jpg" alt="movies">
-              <div class="movie-ratings"></div>
-              <h2 class="movie-title">Dooms day</h2>
-              <pclass="movie-comment">Comment</p>
-            </div>
-
-            <div class="movie-content">
-              <img src="/images/movie1.jpg" alt="movies">
-              <div class="movie-ratings"></div>
-              <h2 class="movie-title">Dooms day</h2>
-              <pclass="movie-comment">Comment</p>
-            </div>
-
-            <div class="movie-content">
-              <img src="/images/movie1.jpg" alt="movies">
-              <div class="movie-ratings"></div>
-              <h2 class="movie-title">Dooms day</h2>
-              <pclass="movie-comment">Comment</p>
-            </div>
-            <div class="movie-content">
-              <img src="/images/movie1.jpg" alt="movies">
-              <div class="movie-ratings"></div>
-              <h2 class="movie-title">Dooms day</h2>
-              <pclass="movie-comment">Comment</p>
-            </div>
-
-            <div class="movie-content">
-              <img src="/images/movie1.jpg" alt="movies">
-              <div class="movie-ratings"></div>
-              <h2 class="movie-title">Dooms day</h2>
-              <pclass="movie-comment">Comment</p>
-            </div>
-          </section>
-        </main>
-        <div class="movie-popup"></div>
-        <footer>
-          <div class="foot-left">
-            <p>All Rights Reserved</p>
+        <div class="movie-content">
+          <div class="card-image">
+            <img src="/images/movie1.jpg" alt="movies">
           </div>
-          <div class="foot-right">
-            <p>Made with <i class="fa-solid fa-heart"></i> by Yayner and Emmanuel Moombe</p>
+          <div class="movie-ratings"></div>
+          <h2 class="movie-title">Dooms day</h2>
+          <button class="movie-comment">comment</button>
+        </div>
+        <div class="movie-content">
+          <div class="card-image">
+            <img src="/images/movie1.jpg" alt="movies">
           </div>
-        </footer>
+          <div class="movie-ratings"></div>
+          <h2 class="movie-title">Dooms day</h2>
+          <button class="movie-comment">comment</button>
+        </div>
+
+        <div class="movie-content">
+          <div class="card-image">
+            <img src="/images/movie1.jpg" alt="movies">
+          </div>
+          <div class="movie-ratings"></div>
+          <h2 class="movie-title">Dooms day</h2>
+          <button class="movie-comment">comment</button>
+        </div>
+
+        <div class="movie-content">
+          <div class="card-image">
+            <img src="/images/movie1.jpg" alt="movies">
+          </div>
+          <div class="movie-ratings"></div>
+          <h2 class="movie-title">Dooms day</h2>
+          <button class="movie-comment">comment</button>
+        </div>
+
+        <div class="movie-content">
+          <div class="card-image">
+            <img src="/images/movie1.jpg" alt="movies">
+          </div>
+          <div class="movie-ratings"></div>
+          <h2 class="movie-title">Dooms day</h2>
+          <button class="movie-comment">comment</button>
+        </div>
+
+        <div class="movie-content">
+          <div class="card-image">
+            <img src="/images/movie1.jpg" alt="movies">
+          </div>
+          <div class="movie-ratings"></div>
+          <h2 class="movie-title">Dooms day</h2>
+          <button class="movie-comment">comment</button>
+        </div>
+
+        <div class="movie-content">
+          <div class="card-image">
+            <img src="/images/movie1.jpg" alt="movies">
+          </div>
+          <div class="movie-ratings"></div>
+          <h2 class="movie-title">Dooms day</h2>
+          <button class="movie-comment">comment</button>
+        </div>
+        <div class="movie-content">
+          <div class="card-image">
+            <img src="/images/movie1.jpg" alt="movies">
+          </div>
+          <div class="movie-ratings"></div>
+          <h2 class="movie-title">Dooms day</h2>
+          <button class="movie-comment">comment</button>
+        </div>
+
+        <div class="movie-content">
+          <div class="card-image">
+            <img src="/images/movie1.jpg" alt="movies">
+          </div>
+          <div class="movie-ratings"></div>
+          <h2 class="movie-title">Dooms day</h2>
+          <button class="movie-comment">comment</button>
+        </div>
+      </section>
+    </main>
+    <div class="movie-popup"></div>
+    <footer>
+      <div class="foot-left">
+        <p>All Rights Reserved</p>
       </div>
+      <div class="foot-right">
+        <p>Made with <i class="fa-solid fa-heart"></i> by Yayner and Emmanuel Moombe</p>
+      </div>
+    </footer>
+  </div>
 </body>
+
 </html>
