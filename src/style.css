@@ -1,6 +1,6 @@
 * {
-  padding: 0%;
-  margin: 0%;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -15,18 +15,19 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 0 10px;
   height: auto;
   box-shadow: -12px 5px 5px 4px;
   border-radius: 4px;
+  margin-bottom: 60px;
 }
 
 .nav-items {
@@ -49,6 +50,15 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  color: #000;
+  background-color: #ababc4;
+  z-index: 2;
 }
 
 .nav-middle .nav-items li a {
@@ -61,6 +71,15 @@ footer {
 
 /* homepage movies display css */
 
+.main-page {
+  padding: 100px;
+}
+
+.high-rated {
+  color: darkcyan;
+  padding-bottom: 20px;
+}
+
 .movies-display {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -72,15 +91,16 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #000;
   height: 353px;
   width: 100%;
+  border-radius: 10px;
+  box-shadow: 14px 4px 24px -1px;
 }
 
 .card-image {
-  border: 2px solid #2c2c2c;
+  /* border: 2px solid #2c2c2c; */
   width: 100%;
-  height: 400px px;
+  height: 400px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -95,19 +115,23 @@ footer {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  border-radius: 5px;
   gap: 20px;
 }
 
 .movie-ratings {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 5px;
+  width: inherit;
+  justify-content: flex-start;
+  padding: 5px;
 }
 
 .like-btn {
   color: #ababc4;
   font-size: 25px;
+  justify-self: flex-start;
 }
 
 #rateCounts {
@@ -116,7 +140,7 @@ footer {
 }
 
 .movie-title {
-  color: #fff;
+  color: darkcyan;
   padding: 4px;
 }
 
@@ -124,9 +148,9 @@ footer {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;
-  border-radius: 1rem;
-  background-color: #1f1f1f;
-  color: #fff;
+  border-radius: 8px;
+  background-color: #000;
+  color: #fff; 
   width: auto;
   outline: 1px solid #121212;
   font-size: 20px;
