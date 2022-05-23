@@ -54,3 +54,12 @@ footer {
   font-size: 18px;
   cursor: pointer;
 }
+
+/* homepage movies display css */
+
+.movies-display {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+}
