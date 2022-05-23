@@ -60,6 +60,24 @@ footer {
 .movies-display {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.movie-content {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 1px solid #000;
+  height: 353px;
+  width: 100%;
+}
+
+.card-image {
+  border: 4px solid #2c2c2c;
+  width: 100%;
+  height: 400px px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
