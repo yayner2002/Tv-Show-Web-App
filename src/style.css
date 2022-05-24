@@ -55,26 +55,21 @@ body {
 }
 
 .main-page {
-  padding: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 72px;
 }
 
 .high-rated {
   color: darkcyan;
-  padding-bottom: 20px;
-}
-
-.movies-display {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  padding-left: 75px;
+  font-size: 39px;
 }
 
 .movie-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 353px;
   width: 100%;
   border-radius: 10px;
   box-shadow: 14px 4px 24px -1px;
@@ -87,6 +82,11 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.movie-img {
+  width: inherit;
+  border: 5px solid;
 }
 
 .movie-descrp {
@@ -110,6 +110,13 @@ body {
   padding: 5px;
 }
 
+.stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+}
+
 .like-btn {
   color: darkgoldenrod;
   font-size: 25px;
@@ -118,7 +125,7 @@ body {
   justify-self: flex-start;
 }
 
-#rateCounts {
+.rateCounts {
   color: #fff;
   font-size: 20px;
   margin-left: 20px;
