@@ -1,5 +1,3 @@
-
-
 // const URL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/';
 // const appID = 'xKdCcCB1CZVZ3fVJxMXD';
 
@@ -14,11 +12,11 @@
 //     const post = await response.text();
 //     return post;
 //   };
-  
+
 //   const getLikes = async () => {
 //     const response = await fetch(`${URL}${appID}/likes`);
 //     const likes = await response.json();
 //     return likes;
 //   };
-  
+
 //   export { postLike, getLikes };

@@ -1,16 +1,11 @@
-
-
 const baseURL = 'https://api.tvmaze.com/shows';
-const getData = async (url) => {
-    const response = await fetch(baseURL);
-    const data = await response.json();
-    return data;
-  };
-  
-  export default getData;
+const getData = async () => {
+  const response = await fetch(baseURL);
+  const data = await response.json();
+  return data;
+};
 
-
-
+export default getData;
 
 //   movieDisplay.innerHTML = '';
 //   data.forEach((movie) => {
