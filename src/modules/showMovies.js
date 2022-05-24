@@ -1,51 +1,51 @@
 const movies = [
-    {
-        image: "/images/movie1.jpg",
-        ratings: 3,
-        title: 'Hard Target',
-    },
-    {
-        image: "/images/movie1.jpg",
-        ratings: 3,
-        title: 'Hard Target',
-    },
-    {
-        image: "/images/movie1.jpg",
-        ratings: 3,
-        title: 'Hard Target',
-    },
-    {
-        image: "/images/movie1.jpg",
-        ratings: 3,
-        title: 'Hard Target',
-    },
-    {
-        image: "/images/movie1.jpg",
-        ratings: 3,
-        title: 'Hard Target',
-    },
-    {
-        image: "/images/movie1.jpg",
-        ratings: 3,
-        title: 'Hard Target',
-    },
-    {
-        image: "/images/movie1.jpg",
-        ratings: 3,
-        title: 'Hard Target',
-    },
-    {
-        image: "/images/movie1.jpg",
-        ratings: 3,
-        title: 'Hard Target',
-    },
+  {
+    image: '/images/movie1.jpg',
+    ratings: 3,
+    title: 'Hard Target',
+  },
+  {
+    image: '/images/movie1.jpg',
+    ratings: 3,
+    title: 'Hard Target',
+  },
+  {
+    image: '/images/movie1.jpg',
+    ratings: 3,
+    title: 'Hard Target',
+  },
+  {
+    image: '/images/movie1.jpg',
+    ratings: 3,
+    title: 'Hard Target',
+  },
+  {
+    image: '/images/movie1.jpg',
+    ratings: 3,
+    title: 'Hard Target',
+  },
+  {
+    image: '/images/movie1.jpg',
+    ratings: 3,
+    title: 'Hard Target',
+  },
+  {
+    image: '/images/movie1.jpg',
+    ratings: 3,
+    title: 'Hard Target',
+  },
+  {
+    image: '/images/movie1.jpg',
+    ratings: 3,
+    title: 'Hard Target',
+  },
 ];
 
 const movieDisplay = document.querySelector('.movies-display');
 const showMovies = () => {
-    movieDisplay.innerHTML = "";
-    movies.forEach(movie => {
-        let movieTag = `
+  movieDisplay.innerHTML = '';
+  movies.forEach((movie) => {
+    const movieTag = `
         <div class="movie-content">
         <div class="card-image">
         <img src="${movie.image}" alt="movies">
@@ -60,8 +60,8 @@ const showMovies = () => {
         <button class="movie-reservation" id="reservation-btn">Reservations</button>
         </div>
         </div>`;
-        movieDisplay.innerHTML += movieTag;
-    });
-    return movieDisplay;
-}
+    movieDisplay.innerHTML += movieTag;
+  });
+  return movieDisplay;
+};
 export default showMovies;

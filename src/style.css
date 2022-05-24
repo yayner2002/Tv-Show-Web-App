@@ -87,7 +87,6 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: inherit;
 }
 
 .movie-descrp {
@@ -137,7 +136,7 @@ body {
   margin-bottom: 1rem;
   border-radius: 8px;
   background-color: #000;
-  color: #fff; 
+  color: #fff;
   width: auto;
   outline: 1px solid #121212;
   font-size: 20px;
@@ -151,16 +150,14 @@ body {
   margin-bottom: 1rem;
   border-radius: 8px;
   background-color: #000;
-  color: #fff; 
+  color: #fff;
   width: auto;
   outline: 1px solid #121212;
   font-size: 20px;
   padding: 5px;
 }
 
-
 footer {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   display: block;
