@@ -170,3 +170,29 @@ footer {
   background-color: #ababc4;
   z-index: 2;
 }
+
+/* media querries */
+@media (max-width :600px) {
+
+  .main-page {
+    padding: 30px;
+  }
+
+  .movies-display {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (min-width :601px)  and (max-width: 920px){
+  .main-page {
+    padding: 30px;
+  }
+
+  .movies-display {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
