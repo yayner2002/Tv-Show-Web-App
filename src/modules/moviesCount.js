@@ -1,1 +1,1 @@
-const counterMovies = document.querySelector('.')
+// const counterMovies = document.querySelector('.')

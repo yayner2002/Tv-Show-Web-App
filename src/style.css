@@ -172,8 +172,7 @@ footer {
 }
 
 /* media querries */
-@media (max-width :600px) {
-
+@media (max-width: 600px) {
   .main-page {
     padding: 30px;
   }
@@ -185,7 +184,7 @@ footer {
   }
 }
 
-@media (min-width :601px)  and (max-width: 920px){
+@media (min-width: 601px)  and (max-width: 920px) {
   .main-page {
     padding: 30px;
   }
