@@ -52,11 +52,12 @@ const showMovies = () => {
         </div>
         <div class="movie-descrp">
         <div class="movie-ratings">
-            <i class="fa-solid like-btn fa-heart"></i>
-            <p id="rateCounts">${movie.ratings}</p>
+            <i class="fa-solid like-btn fa-star"></i>
+            <p id="rateCounts">${movie.ratings} likes</p>
         </div>
         <h2 class="movie-title">${movie.title}</h2>
-        <button class="movie-comment" id="comment-btn">comment</button>
+        <button class="movie-comment" id="comment-btn">Comments</button>
+        <button class="movie-reservation" id="reservation-btn">Reservations</button>
         </div>
         </div>`;
         movieDisplay.innerHTML += movieTag;
