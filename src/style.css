@@ -131,17 +131,19 @@ footer {
 .like-btn {
   color: #ababc4;
   font-size: 25px;
+  cursor: pointer;
   justify-self: flex-start;
 }
 
 #rateCounts {
   color: #fff;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .movie-title {
   color: darkcyan;
   padding: 4px;
+  cursor: pointer;
 }
 
 .movie-comment {
@@ -155,4 +157,5 @@ footer {
   outline: 1px solid #121212;
   font-size: 20px;
   padding: 5px;
+  cursor: pointer;
 }
