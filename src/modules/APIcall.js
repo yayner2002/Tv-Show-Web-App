@@ -1,8 +1,8 @@
 const baseURL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/atLoWEfmgzw7LGfVLApZ';
 const reservations = '/reservations';
 
-const itemsUl = document.getElementById('rsvList');
-const rsvCount = document.getElementById('rsvCount');
+// const itemsUl = document.getElementById('rsvList');
+// const rsvCount = document.getElementById('rsvCount');
 
 // GET
 const getInfo = async (id, type) => {
@@ -32,6 +32,4 @@ const postReservation = async (id, myUsername, startDate, endDate) => {
   return data;
 };
 
-
-export {
-  getInfo, postReservation, baseURL,};
+export { getInfo, postReservation, baseURL };

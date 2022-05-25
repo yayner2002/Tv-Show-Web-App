@@ -1,4 +1,4 @@
-const body = document.querySelector('body');
+// const body = document.querySelector('body');
 
 const createPopup = (type) => {
   const popUp = document.createElement('div');
@@ -21,11 +21,11 @@ const createPopup = (type) => {
     }
   });
 
-   // Reservations
-   const mazeReserv = document.createElement('div');
-   mazeReserv.classList = 'rsvDiv reservation';
-   mazeReserv.innerHTML = `<h3>${type}s <span class="rsvCount">()</span></h3>
+  // Reservations
+  const mazeReserv = document.createElement('div');
+  mazeReserv.classList = 'rsvDiv reservation';
+  mazeReserv.innerHTML = `<h3>${type}s <span class="rsvCount">()</span></h3>
      <ul class="rsvList">Loading...</ul>`;
-}
-  
+};
+
 export default createPopup;
