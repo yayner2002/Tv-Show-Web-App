@@ -1,4 +1,5 @@
 const main = document.querySelector('.main-page');
+import { postLike , updateLikes} from "./Involvement.js";
 
 const showMovies = async (data) => {
   for (let i = 0; i < data.length; i += 1) {
@@ -21,11 +22,12 @@ const showMovies = async (data) => {
     stats.classList.add('stats');
     const like = document.createElement('i');
     like.setAttribute('class', 'fa like-btn fa-heart');
+    like.setAttribute('id', `${data[i].id}`);
     like.setAttribute('aria-hidden', 'true');
     const likeCount = document.createElement('p');
     likeCount.setAttribute('class', 'rateCounts');
     likeCount.setAttribute('Id', `${data[i].id}`);
-    likeCount.textContent = '0 likes';
+    likeCount.textContent = '0';
     stats.append(like, likeCount);
     movieRating.appendChild(stats);
     movieDescript.append(title, movieRating);
@@ -40,6 +42,15 @@ const showMovies = async (data) => {
     movieDescript.append(commentBtn, line, Reservationbtn);
     movieDisplay.append(Img, movieDescript);
     main.appendChild(movieDisplay);
+
+    like.addEventListener('click', (e) => {
+      const itemId = e.target.attributes.id.value;
+        postLike(itemId);
+        like.classList.toggle('liked');
+        likeCount.setAttribute('disabled', true);
+         updateLikes();
+      });
   }
+ 
 };
 export default showMovies;
