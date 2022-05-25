@@ -1,8 +1,9 @@
-const baseURL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/atLoWEfmgzw7LGfVLApZ';
+const baseURL = 'https://api.tvmaze.com/shows';
+// const baseURL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/atLoWEfmgzw7LGfVLApZ';
 const reservations = '/reservations';
 
 // const itemsUl = document.getElementById('rsvList');
-// const rsvCount = document.getElementById('rsvCount');
+const rsvCount = document.getElementById('rsvCount');
 
 // GET
 const getInfo = async (id, type) => {
@@ -32,4 +33,14 @@ const postReservation = async (id, myUsername, startDate, endDate) => {
   return data;
 };
 
-export { getInfo, postReservation, baseURL };
+// LOAD DATA
+const loadData = (id, type) => {
+  getInfo(id, type).then((items) => {
+    rsvCount.innerHTML = items.length;
+    // createLi(type, items);
+  });
+};
+
+export {
+  getInfo, postReservation, loadData, baseURL,
+};
