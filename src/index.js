@@ -9,7 +9,7 @@ rsvBtn.classList = 'home-button reservation-buttons';
 // rsvBtn.name = `${json.results[i].name}`;
 rsvBtn.innerText = 'Reservations';
 // card.appendChild(rsvBtn);
-=======
+
 import showMovies from './modules/showMovies.js';
 import getData from './modules/getdata.js';
 
