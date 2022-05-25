@@ -54,7 +54,6 @@ body {
   cursor: pointer;
 }
 
-
 .popUp {
   background: rgba(170, 180, 170, 0.4);
   backdrop-filter: blur(3px);
@@ -232,5 +231,4 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-
 }
