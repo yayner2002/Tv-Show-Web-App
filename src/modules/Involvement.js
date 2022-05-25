@@ -18,5 +18,4 @@
 //     const likes = await response.json();
 //     return likes;
 //   };
-Kindly remove the unused code from your codebase
 //   export { postLike, getLikes };
