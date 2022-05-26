@@ -10,6 +10,5 @@ const displayItem = async () => {
   const movies = await getData();
   showMovies(movies);
   reservationListener();
-
 };
 displayItem();
