@@ -4,11 +4,7 @@
   "description": "> Js Group Project made by a group of two teams",
   "private": true,
   "scripts": {
-<<<<<<< HEAD
     "test": "jest --env=jsdom",
-=======
-    "test": "jest",
->>>>>>> 43e7becfcedfa1fd76c55e2673065f78cbca3f3d
     "start": "webpack serve --open",
     "build": "webpack"
   },
