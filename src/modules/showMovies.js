@@ -37,7 +37,9 @@ const showMovies = async (data) => {
     commentBtn.textContent = 'Comments';
     const line = document.createElement('br');
     const Reservationbtn = document.createElement('button');
+    Reservationbtn.setAttribute('movie-Id', `${data[i].id}`);
     Reservationbtn.classList.add('movie-reservation');
+    Reservationbtn.id = `${data[i].id}`;
     Reservationbtn.textContent = 'Reservation';
     movieDescript.append(commentBtn, line, Reservationbtn);
     movieDisplay.append(Img, movieDescript);
