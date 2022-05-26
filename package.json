@@ -4,7 +4,7 @@
   "description": "> Js Group Project made by a group of two teams",
   "private": true,
   "scripts": {
-    "test": "jest",
+    "test": "jest --env=jsdom",
     "start": "webpack serve --open",
     "build": "webpack"
   },
@@ -20,6 +20,9 @@
   },
   "homepage": "https://github.com/yayner2002/webpack#readme",
   "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/plugin-transform-modules-commonjs": "^7.18.2",
+    "babel-cli": "^6.26.0",
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.1",
     "eslint": "^7.32.0",
@@ -37,6 +40,7 @@
     "webpack-dev-server": "^4.8.1"
   },
   "dependencies": {
+    "jest-environment-jsdom": "^28.1.0",
     "lodash": "^4.17.21"
   },
   "main": "webpack.config.js",
