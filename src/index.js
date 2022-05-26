@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', showMovies);
 
 const displayItem = async () => {
   const movies = await getData();
-  showMovies(movies);
+  const total = movies.slice(0, 40);
+  showMovies(total);
   commentsListner();
 };
 displayItem();
