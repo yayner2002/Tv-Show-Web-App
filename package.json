@@ -4,7 +4,11 @@
   "description": "> Js Group Project made by a group of two teams",
   "private": true,
   "scripts": {
+<<<<<<< HEAD
     "test": "jest --env=jsdom",
+=======
+    "test": "jest",
+>>>>>>> 43e7becfcedfa1fd76c55e2673065f78cbca3f3d
     "start": "webpack serve --open",
     "build": "webpack"
   },
@@ -43,5 +47,8 @@
     "jest-environment-jsdom": "^28.1.0",
     "lodash": "^4.17.21"
   },
-  "main": "webpack.config.js"
+  "main": "webpack.config.js",
+  "transform": {
+    "\\.js$": "<rootDir>/node_modules/babel-jest"
+  }
 }
