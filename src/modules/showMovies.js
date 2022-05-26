@@ -4,7 +4,6 @@ const main = document.querySelector('.main-page');
 
 const showMovies = async (data) => {
   for (let i = 0; i < data.length; i += 1) {
-    window.console.log(data[0]);
     const movieDisplay = document.createElement('div');
     movieDisplay.classList.add('movie-content');
     const movieCard = document.createElement('div');
