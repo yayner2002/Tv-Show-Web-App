@@ -182,6 +182,10 @@ footer {
   z-index: 2;
 }
 
+.foot-right {
+  margin-top: 15px;
+}
+
 /* media querries */
 @media (max-width: 600px) {
   .main-page {
