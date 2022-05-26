@@ -4,7 +4,7 @@
   "description": "> Js Group Project made by a group of two teams",
   "private": true,
   "scripts": {
-    "test": "echo \"Error:no test specified\" && exit 1",
+    "test": "jest",
     "start": "webpack serve --open",
     "build": "webpack"
   },
@@ -39,5 +39,8 @@
   "dependencies": {
     "lodash": "^4.17.21"
   },
-  "main": "webpack.config.js"
+  "main": "webpack.config.js",
+  "transform": {
+    "\\.js$": "<rootDir>/node_modules/babel-jest"
+  }
 }
