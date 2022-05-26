@@ -1,5 +1,6 @@
+import { postLike, getLikes } from './Involvement.js';
+
 const main = document.querySelector('.main-page');
-import { postLike , getLikes} from "./Involvement.js";
 
 const showMovies = async (data) => {
   for (let i = 0; i < data.length; i += 1) {
@@ -47,25 +48,23 @@ const showMovies = async (data) => {
       const response = await getLikes();
       const counts = document.querySelectorAll('.rateCounts');
 
-      counts.forEach(button => {
-        for(let i = 0; i < response.length; i +=1) {
+      counts.forEach((button) => {
+        for (let i = 0; i < response.length; i += 1) {
           if (button.id === response[i].item_id) {
             button.textContent = `${response[i].likes} likes`;
           }
         }
-
       });
       stats.append(likeCount);
     };
 
-      like.addEventListener('click', (e) => {
-        const itemId = e.target.attributes.id.value
-        postLike(itemId);
-        like.classList.toggle('liked');
-         updateLikes();
-      });
+    like.addEventListener('click', (e) => {
+      const itemId = e.target.attributes.id.value;
+      postLike(itemId);
+      like.classList.toggle('liked');
       updateLikes();
-    } 
- 
+    });
+    updateLikes();
+  }
 };
 export default showMovies;

@@ -98,7 +98,6 @@ body {
   align-items: center;
   border-radius: 5px;
   gap: 5px;
-  height: -webkit-fill-available;
 }
 
 .movie-ratings {
