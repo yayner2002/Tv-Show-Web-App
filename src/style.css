@@ -54,36 +54,6 @@ body {
   cursor: pointer;
 }
 
-.popUp {
-  background: rgba(170, 180, 170, 0.4);
-  backdrop-filter: blur(3px);
-  position: fixed;
-  top: 0;
-  left: 0;
-  box-sizing: border-box;
-  width: 100vw;
-  height: 100vh;
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.showFlex {
-  display: flex;
-}
-
-.popBox {
-  border: solid #000 1px;
-  background: #fff;
-  width: 400px;
-  min-height: 580px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .main-page {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
