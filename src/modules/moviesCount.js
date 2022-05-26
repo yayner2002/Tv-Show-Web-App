@@ -1,8 +1,6 @@
 import getData from './getdata.js';
 import showsNumber from '../showsCount.js';
 
-
-
 const countedMovies = document.querySelector('.num-of-movies');
 
 const counterFunction = async () => {
