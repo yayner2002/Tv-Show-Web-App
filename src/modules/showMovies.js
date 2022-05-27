@@ -2,7 +2,6 @@ const main = document.querySelector('.main-page');
 
 const showMovies = async (data) => {
   for (let i = 0; i < data.length; i += 1) {
-    window.console.log(data[0]);
     const movieDisplay = document.createElement('div');
     movieDisplay.classList.add('movie-content');
     const movieCard = document.createElement('div');
@@ -33,11 +32,12 @@ const showMovies = async (data) => {
     const commentBtn = document.createElement('button');
     commentBtn.classList.add('movie-comment');
     commentBtn.setAttribute('movie-Id', `${data[i].id}`);
-    commentBtn.id = `${data[i].id}`;
     commentBtn.textContent = 'Comments';
     const line = document.createElement('br');
     const Reservationbtn = document.createElement('button');
+    Reservationbtn.setAttribute('movie-Id', `${data[i].id}`);
     Reservationbtn.classList.add('movie-reservation');
+    Reservationbtn.id = `${data[i].id}`;
     Reservationbtn.textContent = 'Reservation';
     movieDescript.append(commentBtn, line, Reservationbtn);
     movieDisplay.append(Img, movieDescript);
