@@ -125,10 +125,6 @@ body {
   justify-self: flex-start;
 }
 
-.liked {
-  color: green;
-}
-
 .rateCounts {
   color: #fff;
   font-size: 20px;
@@ -180,10 +176,6 @@ footer {
   color: #000;
   background-color: #ababc4;
   z-index: 2;
-}
-
-.foot-right {
-  margin-top: 15px;
 }
 
 /* media querries */
