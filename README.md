@@ -14,7 +14,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://yayner2002.github.io/js-group-project/dist)
+[Live Demo Link](https://yayner2002.github.io/js-group-project/dist/index.html)
 
 ## Live presentation of the project
 [Live presentation](https://drive.google.com/file/d/1Wzhbcowhe_mbe0swPFA95Y-UgZRGbJsT/view?usp=sharing)
