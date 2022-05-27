@@ -76,7 +76,7 @@
 }
 
 .reservation-date-username {
-  font-size: 20px;
+  font-size: 16px;
   margin-right: 10px;
 }
 
@@ -86,6 +86,9 @@
 
 .list-of-reservations {
   margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .reservation-div {

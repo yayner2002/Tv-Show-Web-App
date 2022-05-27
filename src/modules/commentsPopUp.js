@@ -71,18 +71,18 @@ const showPopUp = (movieId) => {
               <p><b>Genere : </b> <small>${data.type}</small></p>
              </div>
           </div>
-         <div class="comments-container">
-            <div class="commment-div">
-                <h4> Total Comments (<span class="total-comments"></span>)</h4>
-                <p class="list-of-comments"></p>
-            </div>
-          <form class="add-comment-form">
-          <h3 class="comment-form-title">Add Your Comment Here</h3>
-            <input type="text" name="username" placeholder="Your Name..." required>
-            <textarea name="comment" required placeholder="Your Comment..."></textarea>
-            <input type="submit" value="Comment" id="submit-button">
-          </form>
-         </div>
+          <div class="comments-container">
+          <div class="commment-div">
+              <h4> Total Comments (<span class="total-comments"></span>)</h4>
+              <p class="list-of-comments"></p>
+          </div>
+        <form class="add-comment-form">
+        <h3 class="comment-form-title">Add Your Comment Here</h3>
+          <input type="text" name="username" placeholder="Your Name..." required>
+          <textarea name="comment" required placeholder="Your Comment..."></textarea>
+          <input type="submit" value="Comment" id="submit-button">
+        </form>
+       </div>
           `;
     closePopUp();
     displayComments(movieId);
