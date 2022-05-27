@@ -5,8 +5,6 @@
 
 .movie-popup {
   display: none;
-
-  /* background: chocolate; */
   position: fixed;
   color: #fff;
   z-index: 9999;
@@ -22,8 +20,6 @@
   border-radius: 0.7rem;
   background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), url('/images/banner.jpg');
   background-size: cover;
-
-  /* width: 100%; */
   background-position: center;
 }
 
