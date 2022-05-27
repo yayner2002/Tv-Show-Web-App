@@ -17,7 +17,7 @@
 [Live Demo Link](https://yayner2002.github.io/js-group-project/)
 
 ## Live presentation of the project
-[Live presentation](https://drive.google.com/drive/u/0/folders/1jDxX9rrD9KvxRXj5EScRYjFLCjVfen0M)
+[Live presentation](https://drive.google.com/file/d/1Wzhbcowhe_mbe0swPFA95Y-UgZRGbJsT/view?usp=sharing)
 
 
 ## Getting Started
