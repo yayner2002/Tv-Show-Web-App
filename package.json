@@ -41,8 +41,5 @@
     "jest-environment-jsdom": "^28.1.0",
     "lodash": "^4.17.21"
   },
-  "main": "webpack.config.js",
-  "transform": {
-    "\\.js$": "<rootDir>/node_modules/babel-jest"
-  }
+  "main": "webpack.config.js"
 }

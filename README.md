@@ -1,6 +1,6 @@
 # Js Group Project
 
-> Js Group Project made by a group of two teams
+> Js Group Project made by a team of three persons, This a movie website which fetches data from the TvMaze Api and displays it in ui , it allows the users to add comments, reservations and also to like the movies.
 
 ## Built With
 
@@ -11,7 +11,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://yayner2002.github.io/js-group-project/)
 
 
 ## Getting Started
@@ -29,14 +29,51 @@ To get a local copy up and running follow these simple example steps.
 - Run npm run test to run the tests.
 
 ### Prerequisites
+- Web browser
+- Code editor
 
 ### Setup
 
+```bash
+npm install
+```
+
+```bash
+npm build
+```
+
+```bash
+npm start
+```
+
 ### Install
 
-### Usage
+``` install npm
+npm install
+```
+``` install jest
+npm i -D jest
+```
+``` install webpack
+npm i -D webpack webpac-cli
+```
 
-### Run tests
+###  Run the following commands to run linter tests
+
+WebHint
+```bash
+npx hint .
+```
+
+StyleLint
+```bash
+npx stylelint "**/*.{css,scss}"
+```
+
+ESLint
+```bash
+npx eslint .
+```
 
 ### Deployment
 
@@ -46,15 +83,21 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@medsonmoombe](https://github.com/medsonmoombe)
+- Twitter: [@emmanue78388405](https://twitter.com/@emmanue78388405)
+- LinkedIn: [Emmanuel moombe](https://www.linkedin.com/in/emmanuel-moombe-821918230/)
 
 👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@yayner2002](https://github.com/yayner2002)
+- Twitter: [@wediagazian](https://twitter.com/wediagazian) 
+- LinkedIn: [LinkedIn](https://linkedin.com/in/yaynshet-medhin) 
+
+👤 **Author3**
+
+- GitHub:[Emmanuel Paul](https://github.com/Epaltechs) 
+- Twitter: [Emmanuel Paul](http://twitter.com/@emmapaul247)
+- LinkedIn: [Emmanuel Paul](https://www.linkedin.com/in/emmanuel-paul-a2bab7b4/)
 
 ## 🤝 Contributing
 
