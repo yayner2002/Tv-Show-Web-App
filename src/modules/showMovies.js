@@ -1,5 +1,3 @@
-import { postLike, getLikes } from './Involvement.js';
-
 const main = document.querySelector('.main-page');
 
 const showMovies = async (data) => {
@@ -23,13 +21,12 @@ const showMovies = async (data) => {
     stats.classList.add('stats');
     const like = document.createElement('i');
     like.setAttribute('class', 'fa like-btn fa-heart');
-    like.setAttribute('id', `${data[i].id}`);
     like.setAttribute('aria-hidden', 'true');
     const likeCount = document.createElement('p');
     likeCount.setAttribute('class', 'rateCounts');
     likeCount.setAttribute('Id', `${data[i].id}`);
-    likeCount.textContent = '0';
-    stats.append(like);
+    likeCount.textContent = '0 likes';
+    stats.append(like, likeCount);
     movieRating.appendChild(stats);
     movieDescript.append(title, movieRating);
     const commentBtn = document.createElement('button');
@@ -45,28 +42,6 @@ const showMovies = async (data) => {
     movieDescript.append(commentBtn, line, Reservationbtn);
     movieDisplay.append(Img, movieDescript);
     main.appendChild(movieDisplay);
-
-    const updateLikes = async () => {
-      const response = await getLikes();
-      const counts = document.querySelectorAll('.rateCounts');
-
-      counts.forEach((button) => {
-        for (let i = 0; i < response.length; i += 1) {
-          if (button.id === response[i].item_id) {
-            button.textContent = `${response[i].likes} likes`;
-          }
-        }
-      });
-      stats.append(likeCount);
-    };
-
-    like.addEventListener('click', (e) => {
-      const itemId = e.target.attributes.id.value;
-      postLike(itemId);
-      like.classList.toggle('liked');
-      updateLikes();
-    });
-    updateLikes();
   }
 };
 export default showMovies;

@@ -38,7 +38,7 @@ const displayReservations = (movieId) => {
     if (!data.error) {
       let reservations = '';
       data.forEach((reservation) => {
-        reservations += `<span class="reservation-date-username">${reservation.username}</span><small>${reservation.date_start}</small>small>${reservation.date_end}</small>`;
+        reservations += `<span class="reservation-date-username">${reservation.date_start}-${reservation.date_end} by ${reservation.username}</span>`;
       });
       renderReservations(reservations);
     } else {

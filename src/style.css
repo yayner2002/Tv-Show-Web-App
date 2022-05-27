@@ -125,10 +125,6 @@ body {
   justify-self: flex-start;
 }
 
-.liked {
-  color: green;
-}
-
 .rateCounts {
   color: #fff;
   font-size: 20px;
