@@ -1,5 +1,3 @@
-import countNumOfComments from './countNumOfComments.js';
-
 export const commentApi = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/atLoWEfmgzw7LGfVLApZ/comments';
 export const movieApi = 'https://api.tvmaze.com/shows';
 
@@ -20,6 +18,7 @@ const updateTotalNumberOfComments = (movieId) => {
     commentPopUp.querySelector('.total-comments').innerHTML = totalNumOfComments;
   });
 };
+const countNumOfComments = (response) => (typeof (response) === 'object' ? response.length : 'no match');
 document.addEventListener('click', async (e) => {
   if (e.target.matches('.movie-comment')) {
     const response = await fetchAllMovieComments(e.target.id);
@@ -29,4 +28,4 @@ document.addEventListener('click', async (e) => {
 });
 
 export default updateTotalNumberOfComments;
-export { fetchAllMovieComments };
+export { fetchAllMovieComments, countNumOfComments };

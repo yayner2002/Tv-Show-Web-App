@@ -38,8 +38,8 @@ const displayReservations = (movieId) => {
     if (!data.error) {
       let reservations = '';
       data.forEach((reservation) => {
-        reservations += `<span class="reservation-date-username">${reservation.username}</span><small>${reservation.creation_date}</small>
-                  <p class="reservation-body">${reservation.reservation} </p>`;
+        reservations += `<span class="reservation-date-username">${reservation.date_start}-${reservation.date_end} by ${reservation.username}</span>
+                 `;
       });
       renderReservations(reservations);
     } else {
@@ -79,8 +79,8 @@ const showPopUp = (movieId) => {
           <form class="add-reservation-form">
           <h3 class="reservation-form-title">Add Your Reservation Here</h3>
             <input type="text" name="username" placeholder="Your Name..." required>
-            <input type="text" name="date" placeholder="Start Date..." required>
-            <input type="text" name="date" placeholder="End Date..." required>
+            <input type="text" name="startDate" placeholder="Start Date..." required>
+            <input type="text" name="endDate" placeholder="End Date..." required>
             <input type="submit" value="Reservation" id="submit-button">
           </form>
          </div>
@@ -93,11 +93,13 @@ const showPopUp = (movieId) => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const userName = form.elements.username.value;
-      const reservation = form.elements.reservation.value;
+      const startDate = form.elements.startDate.value;
+      const endDate = form.elements.endDate.value;
       addReservation({
         item_id: movieId,
         username: userName,
-        reservation,
+        date_start: startDate,
+        date_end: endDate,
       }).then(() => {
         displayReservations(movieId);
         updateTotalNumberOfReservations(movieId);
