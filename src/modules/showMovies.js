@@ -52,21 +52,23 @@ const showMovies = async (data) => {
       const counts = document.querySelectorAll('.rateCounts');
 
       counts.forEach((button) => {
-        for (let i = 0; i < response.length; i += 1) {
-          if (button.id === response[i].item_id) {
-            button.textContent = `${response[i].likes} likes`;
+        response.forEach((res)=> {
+          if (button.id === res.item_id) {
+            button.textContent = res.likes;
           }
-        }
+        
+        }) 
+          
       });
       stats.append(likeCount);
     };
 
-    like.addEventListener('click', (e) => {
-      const itemId = e.target.attributes.id.value;
-      postLike(itemId);
-      like.classList.toggle('liked');
-      updateLikes();
-    });
+    // like.addEventListener('click', (e) => {
+    //   const itemId = e.target.attributes.id.value;
+    //   postLike(itemId);
+    //   like.classList.toggle('liked');
+    //   updateLikes();
+    // // });
     updateLikes();
   }
 };
