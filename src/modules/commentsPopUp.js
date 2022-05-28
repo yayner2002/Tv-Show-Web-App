@@ -5,30 +5,27 @@ import updateTotalNumberOfComments, {
 const commentPopUp = document.querySelector('.movie-popup');
 
 const getTvInfo = async (tvUrl) => {
-  try{
-    const response = await fetch(tvUrl)
-  const answer = response.json();
-  return answer;
+  try {
+    const response = await fetch(tvUrl);
+    const answer = response.json();
+    return answer;
   } catch (error) {
-    throw new Error('Request failed: ', err);
+    throw new Error('Request failed: ', error);
   }
-}
+};
 
 const comment = async (tvUrl, formData = {}) => {
+  const answer = await fetch(tvUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(formData),
 
-
-const answer = await fetch(tvUrl, {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify(formData),
-
-})
-const response = answer.text();
-  return response
- 
-}
+  });
+  const response = answer.text();
+  return response;
+};
 
 const addComment = async (formData) => {
   const response = await comment(commentApi, formData);

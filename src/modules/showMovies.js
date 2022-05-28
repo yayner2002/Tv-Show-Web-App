@@ -1,4 +1,4 @@
-import { postLike, getLikes } from './Involvement.js';
+import { getLikes } from './Involvement.js';
 
 const main = document.querySelector('.main-page');
 
@@ -52,13 +52,11 @@ const showMovies = async (data) => {
       const counts = document.querySelectorAll('.rateCounts');
 
       counts.forEach((button) => {
-        response.forEach((res)=> {
+        response.forEach((res) => {
           if (button.id === res.item_id) {
             button.textContent = res.likes;
           }
-        
-        }) 
-          
+        });
       });
       stats.append(likeCount);
     };

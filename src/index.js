@@ -6,7 +6,6 @@ import showMovies from './modules/showMovies.js';
 import getData from './modules/getdata.js';
 import commentsListner from './modules/commentsPopUp.js';
 import './modules/moviesCount.js';
-import './modules/showMovies.js';
 // import listenHeartClicks from './modules/Involvement.js';
 
 document.addEventListener('DOMContentLoaded', showMovies);
@@ -18,4 +17,3 @@ const displayItem = async () => {
   commentsListner();
 };
 displayItem();
-

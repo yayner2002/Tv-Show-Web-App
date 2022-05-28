@@ -37,4 +37,4 @@ window.addEventListener('click', (e) => {
   }
 });
 
-export { postLike, getLikes, listenHeartClicks};
+export { postLike, getLikes, listenHeartClicks };
