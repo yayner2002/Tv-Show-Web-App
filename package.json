@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yayner2002/webpack.git"
+    "url": "git+https://github.com/yayner2002/js-group-project.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yayner2002/webpack/issues"
+    "url": "https://github.com/yayner2002/js-group-project/issues"
   },
-  "homepage": "https://github.com/yayner2002/webpack#readme",
+  "homepage": "https://github.com/yayner2002/js-group-project#readme",
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.18.2",
     "babel-eslint": "^10.1.0",

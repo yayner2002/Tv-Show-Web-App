@@ -62,13 +62,6 @@ const showMovies = async (data) => {
       });
       stats.append(likeCount);
     };
-
-    // like.addEventListener('click', (e) => {
-    //   const itemId = e.target.attributes.id.value;
-    //   postLike(itemId);
-    //   like.classList.toggle('liked');
-    //   updateLikes();
-    // // });
     updateLikes();
   }
 };

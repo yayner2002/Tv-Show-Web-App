@@ -4,22 +4,35 @@ import updateTotalNumberOfReservations, {
 
 const reservationPopUp = document.querySelector('.movie-popup');
 
-const getTvInfo = (tvUrl) => fetch(tvUrl)
-  .then((response) => response.json())
-  .then((actualData) => actualData)
-  .catch((error) => error);
+const getTvInfo = async (tvUrl) => {
+  try {
+    const answer = await fetch(tvUrl);
+    const response  = answer.json();
+    return response;
+}
+catch (error) {
+  throw new Error('Request failed: ', err);
+}
+}
 
-const reservation = (tvUrl, formData = {}) => fetch(tvUrl, {
+const reservation = async (tvUrl, formData = {}) => {
+
+  try {
+  const answer = await fetch(tvUrl, {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
   },
   body: JSON.stringify(formData),
 
-}).then((response) => response.text())
-  .then((actualData) => (actualData.error ? { error: true, info: actualData }
-    : { error: false, info: actualData }))
-  .catch((error) => ({ error: true, info: error }));
+})
+const response = answer.text();
+ return response;
+}
+catch (error) {
+  throw new Error('Request failed: ', err);
+}
+}
 
 const addReservation = async (formData) => {
   const response = await reservation(reservationApi, formData);
