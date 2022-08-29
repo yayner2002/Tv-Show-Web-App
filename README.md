@@ -2,7 +2,8 @@
 
 > Js Group Project made by a team of three persons, This a movie website which fetches data from the TvMaze Api and displays it in ui , it allows the users to add comments, reservations and also to like the movies.
 
-![js-group-project](https://user-images.githubusercontent.com/98400013/170769663-318e5548-90d8-4518-bf0f-68069c8e87fd.png)
+## Screenshot
+![mockup](/images/tvshow.png?raw=true "mockup")
 
 
 ## Built With
